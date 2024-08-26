@@ -19,7 +19,7 @@ To run the notebook and reproduce the results, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/codeskills-ai/LAB-Supervised-Learning-Regression-Models.git
+    git clone https://github.com/codeskills-ai/LAB-Deep-Learning-Neural-Networks-and-Feedforward-Neural-Networks.git
     cd LAB-Supervised-Learning-Regression-Models
     ```
 
