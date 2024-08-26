@@ -104,3 +104,24 @@ After tuning and comparison, evaluate the final feedforward neural network model
 
 - Print and compare MSE and other relevant metrics.
 
+## Submission
+Once you have completed your analysis and visualizations, push your Jupyter notebook to your forked GitHub repository. Ensure that your final submission includes narratives explaining your visualizations and insights.
+
+
+```bash
+$ git add .
+$ git commit -m "done"
+$ git push origin main
+```
+
+Then create a Pull Request!!
+
+## Additional Resources
+
+- [ ]()
+- [ ](/)
+- [ ]()
+- [ ]().
+- [ ]().
+
+![happy_coding](https://user-images.githubusercontent.com/970858/63899010-c23fc480-c9ea-11e9-84a2-542907e42362.png)
