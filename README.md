@@ -7,7 +7,7 @@
 
 ## Introduction
 
-In this project, we will walk through a comprehensive Deep Learning workflow using the Bike Sharing dataset. The dataset contains daily records of bike rentals in a specific city. We will cover data collection, preprocessing, feature engineering, model training, evaluation, and comparison of different deep learning techniques.
+In this LAB, we will walk through a comprehensive Deep Learning workflow using the Bike Sharing dataset. The dataset contains daily records of bike rentals in a specific city. We will cover data collection, preprocessing, feature engineering, model training, evaluation, and comparison of different deep learning techniques.
 
 The goal is to build and compare Feedforward Neural Networks (FNNs) to predict the total number of bike rentals (cnt). We will explore various architectures of FNNs, including different numbers of layers and units, as well as activation functions. Additionally, we will implement regularization techniques such as dropout and L2 regularization to improve model generalization.
 
