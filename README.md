@@ -96,6 +96,7 @@ Optimize the neural network by tuning hyperparameters such as the number of laye
 After tuning and comparison, evaluate the final feedforward neural network model.
 
 - Print and compare MSE and other relevant metrics.
+- Plot the training and validation loss over epochs to diagnose the training process.
 
 ## Bonus
 
