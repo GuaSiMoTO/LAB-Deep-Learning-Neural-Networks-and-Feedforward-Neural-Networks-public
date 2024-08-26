@@ -90,17 +90,20 @@ Optimize the neural network by tuning hyperparameters such as the number of laye
 
 - Use techniques like GridSearchCV or RandomizedSearchCV from `sklearn`, or manual tuning.
 
-### Step 9: Compare Results with Other Models
 
-Compare the performance of the feedforward neural network with Linear Regression, Polynomial Regression, Ridge, and Lasso Regression models.
-
-- Compare metrics such as MSE and R² to determine which model performs best.
-
-### Step 10: Final Model Evaluation
+### Step 9: Final Model Evaluation
 
 After tuning and comparison, evaluate the final feedforward neural network model.
 
 - Print and compare MSE and other relevant metrics.
+
+## Bonus
+
+### Compare Results with Other Models
+
+Compare the performance of the feedforward neural network with Linear Regression, Polynomial Regression, Ridge, and Lasso Regression models.
+
+- Compare metrics such as MSE and R² to determine which model performs best.
 
 ## Submission
 Once you have completed your analysis and visualizations, push your Jupyter notebook to your forked GitHub repository. Ensure that your final submission includes narratives explaining your visualizations and insights.
