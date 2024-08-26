@@ -33,9 +33,7 @@ To run the notebook and reproduce the results, follow these steps:
     jupyter notebook
     ```
 
-## Steps in the Workflow
-
-### Step 1: Data Load
+### Iteration 1: Data Load
 
 Load the Bike Sharing Dataset into a pandas DataFrame. Follow the same steps as outlined in the regression lab for downloading and loading the dataset.
 
@@ -44,14 +42,14 @@ Load the Bike Sharing Dataset into a pandas DataFrame. Follow the same steps as 
 - Load the `day.csv` file into a pandas DataFrame.
 - Display the first few rows to understand its structure.
 
-### Step 2: Explore Data
+### Iteration 2: Explore Data
 
 Visualize the dataset to understand the distribution of `cnt` and its relationship with other features.
 
 - Import visualization libraries: `seaborn` and `matplotlib.pyplot`.
 - Visualize the distribution of `cnt` and scatter plots of features against `cnt`.
 
-### Step 3: Feature Selection and Preprocessing
+### Iteration 3: Feature Selection and Preprocessing
 
 #### 3.0 Remove Unnecessary Columns
 
@@ -61,7 +59,7 @@ Remove columns that are not needed for the model, such as `dteday`.
 
 Normalize the feature set to ensure that each feature contributes equally to the training process.
 
-### Step 4: Build a Feedforward Neural Network
+### Iteration 4: Build a Feedforward Neural Network
 
 Create a feedforward neural network model to predict the total number of bike rentals (`cnt`).
 
@@ -72,30 +70,29 @@ Create a feedforward neural network model to predict the total number of bike re
 
 - Compile the model with an appropriate optimizer and loss function.
 
-### Step 5: Train the Neural Network
+### Iteration 5: Train the Neural Network
 
 Train the feedforward neural network on the training data.
 
 - Use suitable parameters such as the number of epochs and batch size.
 
-### Step 6: Evaluate the Model
+### Iteration 6: Evaluate the Model
 
 Evaluate the performance of the neural network model on the test data.
 
 - Calculate the Mean Squared Error (MSE) and Mean Absolute Error (MAE).
 
-### Step 7: Visualize Training History
+### Iteration 7: Visualize Training History
 
 Plot the training and validation loss over epochs to diagnose the training process.
 
-### Step 8: Hyperparameter Tuning
+### Iteration 8: Hyperparameter Tuning
 
 Optimize the neural network by tuning hyperparameters such as the number of layers, number of units per layer, and activation functions.
 
 - Use techniques like GridSearchCV or RandomizedSearchCV from `sklearn`, or manual tuning.
 
-
-### Step 9: Final Model Evaluation
+### Iteration 9: Final Model Evaluation
 
 After tuning and comparison, evaluate the final feedforward neural network model.
 
