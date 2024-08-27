@@ -59,45 +59,101 @@ Remove columns that are not needed for the model, such as `dteday`.
 
 Normalize the feature set to ensure that each feature contributes equally to the training process.
 
-### Iteration 4: Build a Feedforward Neural Network
+### Iteration 4: Build Two Feedforward Neural Networks
 
-Create a feedforward neural network model to predict the total number of bike rentals (`cnt`).
+In this iteration, you will create and compare **two feedforward neural network models** to predict the total number of bike rentals (`cnt`). One model will be created without any regularization techniques, while the other will include both **dropout** and **L2 regularization**. This will help you understand the impact of these techniques on model performance.
 
-- Define the model architecture:
-  - Input layer
-  - Hidden layers with activation functions (e.g., ReLU)
-  - Output layer with a linear activation function
+#### 4.1: Build a Feedforward Neural Network without Regularization or Dropout
 
-- Compile the model with an appropriate optimizer and loss function.
+1. **Define the model architecture**:
+   - **Input layer**: Specify the input shape based on the number of features.
+   - **Hidden layers**: Include several hidden layers with activation functions (e.g., ReLU).
+   - **Output layer**: Use a linear activation function.
 
-### Iteration 5: Train the Neural Network
+2. **Compile the model**:
+   - Use an appropriate optimizer (e.g., Adam).
+   - Set the loss function to Mean Squared Error (MSE).
+   - Include Mean Absolute Error (MAE) as a metric.
 
-Train the feedforward neural network on the training data.
+#### 4.2: Build a Feedforward Neural Network with Dropout and L2 Regularization
 
-- Use suitable parameters such as the number of epochs and batch size.
+1. **Define the model architecture**:
+   - **Input layer**: Specify the input shape based on the number of features.
+   - **Hidden layers**: Include hidden layers with both **Dropout** and **L2 regularization**:
+     - Apply Dropout layers between the dense layers.
+     - Use L2 regularization in the dense layers.
 
-### Iteration 6: Evaluate the Model
+2. **Compile the model**:
+   - Use an appropriate optimizer (e.g., Adam).
+   - Set the loss function to Mean Squared Error (MSE).
+   - Include Mean Absolute Error (MAE) as a metric.
 
-Evaluate the performance of the neural network model on the test data.
+---
 
-- Calculate the Mean Squared Error (MSE) and Mean Absolute Error (MAE).
+### Iteration 5: Train Both Neural Networks
+
+Train **both neural network models** on the training data:
+
+1. Train the model without regularization or dropout using the following parameters:
+   - Number of epochs: 100
+   - Batch size: 32
+
+2. Train the model with dropout and L2 regularization using the same parameters:
+   - Number of epochs: 100
+   - Batch size: 32
+
+---
+
+### Iteration 6: Evaluate Both Models
+
+Evaluate the performance of each model on the test data:
+
+1. For the model without regularization or dropout, calculate:
+   - Mean Squared Error (MSE)
+   - Mean Absolute Error (MAE)
+
+2. For the model with dropout and L2 regularization, calculate:
+   - Mean Squared Error (MSE)
+   - Mean Absolute Error (MAE)
+
+Compare the results to see how regularization techniques affect the performance.
+
+---
 
 ### Iteration 7: Visualize Training History
 
-Plot the training and validation loss over epochs to diagnose the training process.
+Plot and compare the training and validation loss for both models over epochs:
+
+1. Create a plot for the model without regularization or dropout showing:
+   - Training Loss
+   - Validation Loss
+
+2. Create a plot for the model with dropout and L2 regularization showing:
+   - Training Loss
+   - Validation Loss
+
+Analyze the plots to diagnose the training process and observe differences.
+
+---
 
 ### Iteration 8: Hyperparameter Tuning
 
-Optimize the neural network by tuning hyperparameters such as the number of layers, number of units per layer, and activation functions.
+Optimize both neural networks by experimenting with different hyperparameters:
 
-- Use techniques like GridSearchCV or RandomizedSearchCV from `sklearn`, or manual tuning.
+1. Tune the number of layers, units per layer, and dropout rates.
+2. Use techniques such as **GridSearchCV** from `sklearn`, or perform manual tuning.
+
+---
 
 ### Iteration 9: Final Model Evaluation
 
-After tuning and comparison, evaluate the final feedforward neural network model.
+After hyperparameter tuning, evaluate the final models:
 
-- Print and compare MSE and other relevant metrics.
-- Plot the training and validation loss over epochs to diagnose the training process.
+1. Print and compare the final Mean Squared Error (MSE) and Mean Absolute Error (MAE) for both models.
+2. Plot and compare the training and validation loss over epochs for both final models.
+
+---
+
 
 ## Bonus
 
