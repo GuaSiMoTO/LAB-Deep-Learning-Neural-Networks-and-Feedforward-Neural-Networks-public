@@ -11,7 +11,7 @@ In this LAB, we will walk through a comprehensive Deep Learning workflow using t
 
 The goal is to build and compare Feedforward Neural Networks (FNNs) to predict the total number of bike rentals (cnt). We will explore various architectures of FNNs, including different numbers of layers and units, as well as activation functions. Additionally, we will implement regularization techniques such as dropout and L2 regularization to improve model generalization.
 
-To optimize the performance of our neural networks, we will use GridSearchCV for hyperparameter tuning, which will help in selecting the best parameters and configurations for our models.
+To optimize the performance of our neural networks, we will use RandomSearchedCV for hyperparameter tuning, which will help in selecting the best parameters and configurations for our models.
 
 ## Setup Instructions
 
@@ -141,7 +141,7 @@ Analyze the plots to diagnose the training process and observe differences.
 Optimize both neural networks by experimenting with different hyperparameters:
 
 1. Tune the number of layers, units per layer, and dropout rates.
-2. Use techniques such as **GridSearchCV** from `sklearn`, or perform manual tuning.
+2. Use techniques such as **RandomSearchedCV** from `sklearn`, or perform manual tuning.
 
 ---
 
