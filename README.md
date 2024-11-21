@@ -83,10 +83,13 @@ In this step, you will create and compare **two feedforward neural network model
 
 #### 4.1: Build a Feedforward Neural Network without Regularization or Dropout
 
-1. **Define the model architecture**:
-   - **Input layer**: Specify the input shape based on the number of features.
-   - **Hidden layers**: Include several hidden layers with activation functions (e.g., ReLU).
-   - **Output layer**: Use a linear activation function.
+1. **Define the Model Architecture**
+
+   - **Input layer**: Define the input shape using the number of features in the dataset (`X_train.shape[1]`).
+   - **First hidden layer**: Add a dense layer with 32 neurons and the ReLU activation function.
+   - **Second hidden layer**: Add a dense layer with 12 neurons and the ReLU activation function.
+   -**Output layer**: Add a dense layer with 1 neuron and no activation function for regression.
+
 
 2. **Compile the model**:
    - Use an appropriate optimizer (e.g., Adam).
@@ -95,11 +98,15 @@ In this step, you will create and compare **two feedforward neural network model
 
 #### 4.2: Build a Feedforward Neural Network with Dropout and L2 Regularization
 
-1. **Define the model architecture**:
-   - **Input layer**: Specify the input shape based on the number of features.
-   - **Hidden layers**: Include hidden layers with both **Dropout** and **L2 regularization**:
-     - Apply Dropout layers between the dense layers.
-     - Use L2 regularization in the dense layers.
+1. **Define the Model Architecture**
+
+   - **Input layer**: Specify the input shape based on the number of features in the dataset (`X_train.shape[1]`).
+   - **First hidden layer**: Add a dense layer with 32 neurons, the ReLU activation function, and set the input shape.
+   - **Dropout layer**: Add a dropout layer with a rate of 0.1 after the first hidden layer.
+   - **Second hidden layer**: Add a dense layer with 12 neurons and the ReLU activation function.
+   - **Dropout layer**: Add another dropout layer with a rate of 0.1 after the second hidden layer.
+   - **Output layer**: Add a dense layer with 1 neuron and no activation function for regression.
+
 
 2. **Compile the model**:
    - Use an appropriate optimizer (e.g., Adam).
